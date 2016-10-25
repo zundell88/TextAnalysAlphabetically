@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TextAnalysAlphabetically
 {
     class Program
-    { //1
+    { 
         static void Main(string[] args)
         {
             StreamReader boyeStreamReader = null;
