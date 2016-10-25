@@ -24,7 +24,7 @@ namespace TextAnalysAlphabetically
                 Console.ReadLine();
                 return;
             }
-
+            //
             var frequencyDictionary = new SortedDictionary<string, int>(StringComparer.CurrentCultureIgnoreCase);
             string lineOfWords;
             while ((lineOfWords = boyeStreamReader.ReadLine()) != null)
