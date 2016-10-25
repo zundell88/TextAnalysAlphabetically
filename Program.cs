@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TextAnalysAlphabetically
 {
     class Program
-    { 
+    { //1234
         static void Main(string[] args)
         {
             StreamReader boyeStreamReader = null;
@@ -55,4 +55,4 @@ namespace TextAnalysAlphabetically
             return wordString.Split(' ');
         }
     }
-}
+} 
