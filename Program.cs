@@ -13,7 +13,6 @@ namespace TextAnalysAlphabetically
         {
             StreamReader boyeStreamReader = null;
             SortedSet<string> ordlista = new SortedSet<string>(File.ReadAllLines("ordlista.txt", Encoding.Default));
-            
             try
             {
                 boyeStreamReader = new StreamReader("Boye.txt", Encoding.Default);
@@ -24,7 +23,6 @@ namespace TextAnalysAlphabetically
                 Console.ReadLine();
                 return;
             }
-            //
             var frequencyDictionary = new SortedDictionary<string, int>(StringComparer.CurrentCultureIgnoreCase);
             string lineOfWords;
             while ((lineOfWords = boyeStreamReader.ReadLine()) != null)
@@ -41,7 +39,6 @@ namespace TextAnalysAlphabetically
                 }
             }
             boyeStreamReader.Close();
-
             foreach (KeyValuePair<string, int> pair in frequencyDictionary)
             {
                 bool match = ordlista.Contains(pair.Key);
